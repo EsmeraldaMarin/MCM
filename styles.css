@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  padding: 20px;
+}
+body > div {
+  display: flex;
+  flex-direction: column;
+}
+body > div span {
+  display: block;
+}
+body > div > .input {
+  width: 100%;
+}
+body > div > .input textarea {
+  font-size: 1.3em;
+  min-width: 100%;
+  height: 250px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+body > div > .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+body > div > .buttons button {
+  width: 60%;
+  border: 0;
+  height: 3em;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: violet;
+}
+body > div > .buttons button.lim {
+  width: 39%;
+  background-color: rgb(237, 177, 237);
+}
+body > div .respuesta {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+body > div .respuesta div {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: rgb(173, 0, 173);
+}
+body > div .respuesta div span {
+  font-size: 3em;
+}/*# sourceMappingURL=styles.css.map */
