@@ -13,7 +13,7 @@ listo_btn.addEventListener('click', ()=>{
     }
 
     function calcular_mcm(numeros){
-        let mcm = 1
+        let mcm = 0
         let es_mult = true
         let multiptope = 1
         numeros.forEach(numero => {
