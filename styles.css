@@ -4,6 +4,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+header {
+  height: 20px;
+  width: 100vw;
+  background-color: violet;
+  margin: -20px -20px 20px -20px;
+}
+
+ul > li, li > a {
+  text-decoration: none;
+  list-style: none;
 }
 
 textarea {
@@ -13,17 +26,57 @@ textarea {
 body {
   padding: 20px;
 }
-body > div {
+body.inicio {
   display: flex;
   flex-direction: column;
 }
-body > div span {
+body.inicio h1 {
+  margin-bottom: 10px;
+}
+body.inicio span {
+  margin: 10px 0;
+}
+body.inicio .section {
+  margin-top: 20px;
+  height: 50vw;
+  background-color: violet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.inicio .section li {
+  background-color: rgb(237, 177, 237);
+}
+body.inicio .section li a {
+  display: block;
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  line-height: 3em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+}
+body.calculadora > a {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(249, 220, 249);
+}
+body.calculadora > div {
+  display: flex;
+  flex-direction: column;
+}
+body.calculadora > div span {
   display: block;
 }
-body > div > .input {
+body.calculadora > div > .input {
   width: 100%;
 }
-body > div > .input textarea {
+body.calculadora > div > .input textarea {
   font-size: 1.3em;
   min-width: 100%;
   height: 250px;
@@ -31,14 +84,14 @@ body > div > .input textarea {
   padding: 10px 20px;
   border-radius: 20px;
 }
-body > div > .buttons {
+body.calculadora > div > .buttons {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-body > div > .buttons button {
+body.calculadora > div > .buttons button {
   width: 60%;
   border: 0;
   height: 3em;
@@ -46,22 +99,23 @@ body > div > .buttons button {
   font-weight: bold;
   background-color: violet;
 }
-body > div > .buttons button.lim {
+body.calculadora > div > .buttons button.lim {
   width: 39%;
   background-color: rgb(237, 177, 237);
 }
-body > div .respuesta {
+body.calculadora > div .respuesta {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
 }
-body > div .respuesta div {
+body.calculadora > div .respuesta div {
   width: 100%;
   padding: 20px;
   border-radius: 20px;
   color: #fff;
   background-color: rgb(173, 0, 173);
 }
-body > div .respuesta div span {
+body.calculadora > div .respuesta div span {
   font-size: 3em;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
